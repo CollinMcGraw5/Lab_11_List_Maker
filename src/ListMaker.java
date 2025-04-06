@@ -55,7 +55,7 @@ public class ListMaker {
         }
         printNumberedList();
         int itemToDelete = SafeInput.getRangedInt("Enter the item number to delete:", 1, list.size());
-        list.remove(itemToDelete - 1); // Adjust for 0-based index
+        list.remove(itemToDelete - 1);
         System.out.println("Item deleted.");
     }
 
@@ -68,7 +68,7 @@ public class ListMaker {
         printNumberedList();
         int index = SafeInput.getRangedInt("Enter the position to insert at:", 1, list.size() + 1);
         String item = SafeInput.getNonZeroLenString("Enter the item to insert:");
-        list.add(index - 1, item); // Adjust for 0-based index
+        list.add(index - 1, item);
         System.out.println("Item inserted.");
     }
 
